@@ -1,0 +1,546 @@
+* {
+	/*はじめにある全体の余白を無くし以後、余白を含める*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+	/*全体の基本的な文字色の指定と大きさ*/
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: 游ゴシック, YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+}
+img {
+	/*全ての画像はどの画面幅においても
+	100%より大きくならない*/
+	max-width: 100%;
+	height: auto;
+    width: auto;
+	max-height: 100%; 
+}
+p {
+    margin: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background: rgb(71,179,157);
+    width: 100%;
+    opacity: 0.9;
+}
+.container {
+    width: 100%;
+    max-width: 100%;
+    color: white;
+}
+
+.header-box {
+    display: flex;
+
+}
+/*headerの左側*/
+.header-left {
+    width: 60%;
+     padding: 30px;
+}
+/*headerの右側*/
+.header-right-pc {
+   display: flex;
+   letter-spacing: 1px;
+   margin-left: 50px;
+}
+.header-right1-pc {
+    padding: 35px 20px;
+    transition: all 0.5s;
+}
+.header-right2-pc {
+    padding: 35px 30px;
+    transition: all 1s;
+}
+.header-right1-pc:hover {
+    background: rgb(255, 255, 255,0.3);
+}
+.header-right2-pc:hover {
+    background: rgb(255, 255, 255,0.3);
+}
+/*1050px以下でハンバーガーメニューを表示させます*/
+.header {
+    display: none;
+}
+.hunber-answer {
+    display: none;
+}
+/*1枚目のスライドに移ります*/
+.one-wrapper {
+    background: rgb(71,179,157);
+    width: 100%;
+}
+.one-container {
+    width: 100%;
+    max-width: 100%;
+    color: white;
+    padding-top: 170px;
+    padding-bottom: 200px;
+
+}
+.one-textbox {
+    width: 640px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.one-text1 {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.one-text2 {
+    width: 570px;
+    margin: 0 auto;
+    letter-spacing: 2px;
+}
+
+/*2枚目のスライドに移ります*/
+.second-wrapper {
+    background: rgb(251,251,251);
+    width: 100%;
+}
+.second-container {
+    width: 100%;
+    max-width: 100%;
+    color: rgb(76,67,63);
+    padding: 60px 0px;
+}
+.second-textbox {
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    border-top: solid 2px rgb(229,229,229);
+    border-bottom: solid 2px rgb(229,229,229);
+}
+
+.second-imgboxs {
+    width: 1180px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: flex;
+}
+.second-imgbox {
+    width: 215px;
+    margin-right: 20px;
+    position: relative;
+}
+.second-imgbox-text1 {
+    width: 60%;
+    padding: 5px 10px;
+    margin: 7px 0;
+    background: rgb(71,179,157);
+    color: white;
+    text-align: center; 
+}
+.ranking {
+    position: absolute;
+    top: 0;
+    width: 47px;
+    height: 47px;
+    background:rgb(138,146,156,0.6);
+    color: white;
+}
+.ranking p {
+    padding: 10px;
+}
+.no1 {
+    background: rgb(225,198,114);
+
+}
+.no2 {
+   background:rgb(138,146,156,0.6);
+}
+.no3 {
+   background:rgb(142,84,56,0.6);
+}
+.no4, .no5 {
+    background: rgb(126,122,103,0.6);
+
+}
+
+.border-only {
+    width: 100%;
+    border-bottom: solid 2px rgb(229,229,229);
+}
+
+/*3枚目のスライドに映ります*/
+.three-wrapper {
+    width: 100%;
+    background: rgb(59,69,82);
+}
+
+.three-container {
+    width: 100%;
+    max-width: 100%;
+    color: white;
+    position: relative;
+}
+.three-text-box {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+/*三角形を作りたい、したの2つで終わり*/
+.tri-border {
+    position: absolute;
+    bottom: -18px;
+    width: 100%;
+    z-index: 20;
+}
+.tri-border span {
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 56px solid transparent;
+    border-right: 56px solid transparent;
+    border-top: 18px solid #3B4552;
+}
+/*4枚目のスライドに映ります,見本を真似ました*/
+section {
+    display: block;
+}
+.c_box.c_box_left {
+    background-color: #fff;
+}
+.c_box {
+    position: relative;
+    border-bottom: 2px solid #e5e5e5;
+}
+.wrap {
+    overflow: visible;
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.c_box_inner {
+    z-index: 10;
+    width: 54%;
+    max-width: 100%;
+    padding-bottom: 32px;
+    padding-left: 20px;
+}
+.c_number {
+    background: #47B39D;
+    color: #fff;
+    display: inline-block;
+    padding: 40px 12px 8px;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+.c_title h3 {
+    /* color: #47B39D; */
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.c_english {
+    color: #47B39D;
+    font-size: 13px;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+ .c_img_box {
+    background-image:  url('https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/macbook-at-the-coffee-shop.jpg');
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: center top;
+    width: 40%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*ボタン部武運*/
+.c_text h4 {
+    font-size: 24px;
+    margin-bottom: 28px;
+    margin-top: 0;
+    font-weight: normal;
+}
+ .c_text p {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic, Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    margin-bottom: 48px;
+}
+.c_text .c_btn a {
+    border-radius: 5px;
+    background: #FF6C00;
+    color: #fff;
+    font-size: 14px;
+    opacity: 1;
+    display: block;
+    width: 30%;
+    padding: 12px;
+    text-align: center;
+}
+/*２つめ。右側の方を作成していきます*/
+.c_box_right .c_box_inner {
+    float: right;
+}
+.c_box_right .c_box_inner {
+    padding-left: 0;
+}
+.c_box_right .c_img_box {
+    background: url('https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/two-coffee-at-the-shop.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ .wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*3つめのやつ。左側*/
+.c_img_box.three {
+    background-image: url('https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/imac-glasses-desk.jpg');
+}
+/*4つめの右側*/
+.c_img_box.fore {
+    background-image: url('https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/macbook-holding.png');
+}
+
+/*6つめのcssにはいります*/
+.six-wrapper {
+    width: 100%;
+    background: white;
+}
+.six-container {
+    width: 100%;
+    max-width: 100%;
+}
+.six-flex {
+    display: flex;
+    text-align: center;
+    color: rgb(71,179,157);
+}
+.six-flex-box {
+    width: 50%;
+    padding: 100px 0;
+}
+.six-flex-text h1 {
+    margin-bottom: 15px;
+}
+.six-flex-text p {
+    margin-bottom: 30px;
+}
+.six-flex-box .btn {
+    color: white;
+    width: 240px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 3px;
+    background: rgb(71,179,157);
+}
+.six-flex-box.one {
+    border-right: solid 2px rgb(229,229,229); 
+}
+
+
+
+/*7つめのスライドに移ります*/
+.seven-wrapper {
+    background: white;
+    width: 100%;
+    position: relative;
+    min-height: 450px;
+} 
+.seven-container {
+    width: 100%;
+    max-width: 100%;
+}
+.google-map {
+    width: 40%;
+    height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+.google-map iframe {
+    width: 100%;
+
+}
+.seven-left-box {
+    width: 60%;
+    padding: 60px 0;
+    padding-top: 85px; 
+    color:rgb(143,138,135);
+}
+.seven-left-box-text {
+    width: 640px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    border-top: solid 1px rgb(229,229,229);
+}
+.conpany {
+    display: flex;
+    border-bottom: solid 1px rgb(229,229,229);  
+}
+.kaishamei {
+    width: 20%;
+    padding: 20px 0;
+    text-align: center;
+}
+.kaishamei.one {
+    border-top: solid 1px rgb(71,179,157);
+}
+.kabusiki {
+    width: 80%;
+    padding: 20px 0;
+}
+/*8枚目スライド*/
+.eight-wrapper {
+    width: 100%;
+    background: rgb(71,179,157);
+}
+.eight-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 80px 0;
+}
+
+form  {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+input {
+    width: 50%;
+    height: 35px;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+}
+textarea {
+    width: 50%;
+    height: 180px;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+}
+.eight-text-box {
+    width: 170px;
+    margin:  0 auto;
+    text-align: center; 
+    background: rgb(19,29,42);
+    border-radius: 4px;
+    color: white;
+    padding: 15px;
+}
+/*最後のfooterに移ります*/
+.nine-wrapper {
+    width: 100%;
+    background: rgb(3,23,49);
+    position: relative
+}
+.nine-container {
+    width: 100%;
+    max-width: 100%;
+    color: white;
+    border-top: solid 8px rgb(59,69,82);
+    padding: 60px 10px;
+
+}
+.nine-text  {
+    width: 97%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    border-bottom: solid 1px rgb(59,69,82);
+}
+.nine-box {
+    width: 380px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+       cursor: pointer;
+}
+.nine-box-left {
+    width: 40%;
+}
+.nine-box-right {
+    width: 60%;
+     padding-left: 40px;
+}
+.nine-box-right p {
+   padding-bottom: 10px;
+}
+.nine-box-right p:hover {
+   opacity: 0.7;
+}
+.nine-box-left p {
+    padding-bottom: 15px;
+}
+.nine-box-left p:hover {
+     opacity: 0.7;
+}
+/*最後*/
+.finish {
+    background: rgb(1,10,23);
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.finish-text {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+/*pagetopのレイアウトです*/
+.pagetop {
+   position: fixed;
+    bottom: 20px;
+    right: 50px;
+    display: none;
+}
+.fa {
+    line-height: 1;
+    padding-top: 5px;
+}
+.pagetop span {
+    display: block;
+    transition: all 0.3s;
+    border-radius: 25px;
+    background: #2b2b2b;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 36px;
+    opacity: .8;
+}
+.pagetop.block {
+    transition: inherit;
+    position: initial;
+    position: absolute;
+    top: -60px;
+}
