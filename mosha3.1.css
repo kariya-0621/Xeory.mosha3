@@ -239,7 +239,12 @@ textarea {
     border: none;
 }
 
-
+.tri-border {
+   display: none;
+}
+.tri-border span {
+    display: none;
+}
 
 
 
@@ -404,6 +409,10 @@ textarea {
 .nine-box-right {
     width: 60%;
      padding-left: 0px;
+}
+
+.sumaho {
+	overflow: hidden;
 }
 
 
