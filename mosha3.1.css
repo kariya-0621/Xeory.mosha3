@@ -1,0 +1,437 @@
+@media screen and (max-width: 1050px) {
+header {
+	opacity: 1;
+}
+/*1050px以下でハンバーガーメニューを表示させます*/
+.header-right-pc {
+    display: none;
+}
+/*ハンバーガーメニュー表示します*/
+.hunber {
+  /*position:relative;が設定されていないので起点
+  からどれだけの位置にあるかを示す絶対位置の指定*/
+  display: block;
+  position: relative;
+  left: 150px;
+  /*でもこのままじゃ位置を指定しただけでこのhamburger
+  がどのくらいの面積占めているかわからんから,widthとheight
+  の指定が必要*/
+  width:  120px; 
+  max-width: 100%;                         
+  height:  100px;
+  background: rgb(59,69,82);
+  z-index: 300;
+  margin-right: 20px;
+
+
+}
+.line {
+  position:  absolute;
+  top: 50px;
+  left:  40px;
+  height:  4px;
+  width:  35px;
+  z-index: 200;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.6s;
+}
+
+.one {
+  top:  33px;
+}
+
+.second {
+  top: 42px;
+
+} 
+
+.third {
+  top: 52px;
+}
+
+.force {
+   top: 62px;
+}
+/*ハンバーガーの中身*/
+
+.hunber-answer {
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 100px;
+	background: rgb(59,69,82);
+	color:white;
+	z-index: 10;
+	display: none;
+}
+
+.hunber-answer-text {
+	font-size: 15px;
+	padding: 30px 30px 20px 30px;
+	font-weight: 700;
+}
+.hunber-answer-text2 {
+	display: flex;
+	text-align: center;
+	padding-bottom: 45px;
+}
+.hunber-answer-text2-1 {
+	width: 30%;
+	
+}
+
+.hunber-answer-text2-2 {
+	width: 60%;
+}
+
+
+/*1枚目のスライド*/
+.one-container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.one-textbox {
+    width: 700px;
+}
+.one-text1 {
+    font-size: 14px;
+    line-height: 70px;
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+
+.one-text2 {
+    width: 650px;
+    max-width: 100%;
+    margin: 0 auto;
+    letter-spacing: 2px;
+}
+/*2枚目のスライドに移ります*/
+.second-imgbox4, .second-imgbox5 {
+	display: none;
+}
+
+.second-imgboxs {
+    padding: 0 30px;
+    display: flex;
+}
+.second-imgbox {
+    width: 290px;
+    margin-right: 15px;
+    position: relative;
+    border:  solid 1px rgb(229,229,229) ;
+}
+.second-imgbox-text1 {
+    width: 60%;
+    padding: 5px 10px;
+    margin: 7px 0;
+    text-align: center; 
+}
+.second-imgbox-text2 {
+	padding: 15px;
+}
+/*4枚目、コード参考にしました*/
+.wrap {
+    width: auto;
+    margin: 0 24px;
+}
+.c_box_inner {
+    width: 100%;
+    padding-left: 0;
+}
+.c_title {
+    text-align: center;
+}
+.c_img_box {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.c_text h4 {
+    text-align: center;
+}
+.c_btn {
+    text-align: center;
+}
+
+.c_text .c_btn a{
+	 width: 100%;
+	 margin: 0 auto;
+}
+/*右側のレイアウト*/
+.c_box_right .c_img_box {
+     position: relative;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+
+/*６つめのスライドにはいります*/
+.six-flex {
+    display: initial;
+    text-align: center;
+    color: rgb(71,179,157);
+}
+.six-flex-box {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.six-flex-box.one {
+    border-right: initial; 
+}
+.six-flex-text h1 {
+	font-size: 35px;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+.six-flex-text .btn {
+	width: 470px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+}
+/*7つめのスライドに移ります*/
+.google-map {
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+}
+.seven-left-box {
+    width: 100%;
+    padding: 60px 0;
+    padding-top: 85px; 
+    color:rgb(143,138,135);
+}
+.seven-left-box-text {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    border-top: solid 1px  rgb(71,179,157);
+}
+.kaishamei.one {
+    border-top: initial;
+}
+
+input {
+    width: 90%;
+    margin: 0 auto;
+    height: 35px;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+}
+textarea {
+    width: 90%;
+    margin: 0 auto;
+    height: 180px;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+.one-textbox {
+	   
+}
+.header-left{
+	padding: 0 0 30px 10px;
+}
+
+/*この下にハンバーガーメニューの細長いの作成*/
+.header-box {
+	display: initial;
+} 
+
+.hunber {
+  /*position:relative;が設定されていないので起点
+  からどれだけの位置にあるかを示す絶対位置の指定*/
+  display: block;
+  position: relative;
+  left: 10px;
+  /*でもこのままじゃ位置を指定しただけでこのhamburger
+  がどのくらいの面積占めているかわからんから,widthとheight
+  の指定が必要*/
+  width:  95%; 
+  max-width: 100%;                         
+  height:  35px;
+  background: rgb(59,69,82);
+  z-index: 300;
+}
+.line {
+  position:  absolute;
+  top: 10px;
+  left:  50%;
+  height:  2px;
+  width:  20px;
+  z-index: 200;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.6s;
+}
+
+.one {
+  top:  10px;
+}
+
+.second {
+  top: 13px;
+
+} 
+
+.third {
+  top: 16px;
+}
+
+.force {
+   top: 19px;
+}
+/*微調整*/
+.one-container {
+    width: 100%;
+    max-width: 100%;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.hunber-answer {
+	padding-bottom: 50px;
+	position: absolute;
+	top: 95px;
+}
+.hunber-answer-text2 {
+	display: initial;
+	padding-bottom: 45px;
+}
+.hunber-answer-text2-1 {
+	width: 250px;
+	text-align: center;
+	margin-bottom: 20px ;
+	
+}
+
+.hunber-answer-text2-2 {
+	width: 250px;
+	text-align: center;
+	padding-left: 35px;
+}
+/*2枚目のスライドに移ります*/
+.second-imgboxs {
+    display: initial;
+    padding: 0 20px;
+}
+.second-imgbox {
+    width: 650px;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    border:  solid 2px rgb(229,229,229) ;
+    margin-bottom: 20px;
+}
+.second-imgbox-text1 {
+    width: 30%;
+    padding: 5px 10px;
+    margin: 7px 0;
+    text-align: center; 
+}
+.second-imgbox-text2 {
+	padding: 15px;
+}
+
+/*9枚目*/
+.nine-container {
+    width: 100%;
+    max-width: 100%;
+    color: white;
+    border-top: solid 8px rgb(59,69,82);
+    padding: 30px 10px;
+    padding-bottom: 60px;
+
+}
+.nine-text  {
+    width: 97%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    border-bottom: solid 1px rgb(59,69,82);
+    padding: 0;
+    padding: 60px 0;
+}
+.nine-box {
+    width: 380px;
+    margin-top: 30px;
+    margin-left: 0;
+    display: initial;
+    cursor: pointer;
+}
+.nine-box-left {
+    width: 50%;
+}
+.nine-box-right {
+    width: 60%;
+     padding-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
