@@ -34,7 +34,7 @@ else
   // [#page-top]をゆっくりフェードアウトする
   $( '.pagetop' ).fadeOut( 'slow' ) ;
 }
-if( now > position + 10)
+if( now > position + 15)
 {
   $( '.pagetop ' ).addClass('block');
 }
