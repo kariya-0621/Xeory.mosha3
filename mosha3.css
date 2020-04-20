@@ -197,6 +197,9 @@ header {
     text-align: center;
     padding: 30px;
 }
+ .three-text-text2 {
+    text-align: center;
+ }
 /*三角形を作りたい、したの2つで終わり*/
 .tri-border {
     position: absolute;
@@ -544,3 +547,4 @@ textarea {
     position: absolute;
     top: -60px;
 }
+
