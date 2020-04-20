@@ -18,6 +18,7 @@ $(function(){
 $(window).scroll(function (){
 // 最上部から現在位置までの距離を取得して、変数[now]に格納
 var now = $( window ).scrollTop() ;
+var position = $('.eight-container').offset().top;
 
 
 // 最上部から現在位置までの距離(now)が100px以上だったら
@@ -33,7 +34,7 @@ else
   // [#page-top]をゆっくりフェードアウトする
   $( '.pagetop' ).fadeOut( 'slow' ) ;
 }
-if( now > 8900 )
+if( now > position )
 {
   $( '.pagetop ' ).addClass('block');
 }
